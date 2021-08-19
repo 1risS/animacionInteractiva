@@ -121,9 +121,9 @@ height: 400px;
   justify-content: space-between;
   align-items: center;
   z-index: 2000;
-  height: 20%;
-  padding: 30px;
-  background-color:rgba(217, 237, 194, 0.7);
+  height: 15%;
+  padding: 5px;
+  background-color:#d9edc266;
   font-family: "BILLO";
   font-size: 100px;
   color:#CA83A2
@@ -149,12 +149,54 @@ height: 400px;
   width: 150px;
 }
 
+@keyframes rainbow{
+  100%,0%{
+    color: #FFD6CF;
+  }
+  8%{
+    color: #CA83A2;
+  }
+  16%{
+    color: #FEC1E0;
+  }
+  25%{
+    color: #A8FFD9;
+  }
+  33%{
+    color: #EBB5FF;
+  }
+  41%{
+    color: #FFAB91;
+  }
+  50%{
+    color: #CA83A2;
+  }
+  58%{
+    color: #FEC1E0;
+  }
+  66%{
+    color: #EBB5FF;
+  }
+  75%{
+    color: #FFAB91;
+  }
+  83%{
+    color: #CA83A2;
+  }
+  91%{
+    color: #FEC1E0;
+  }
+}
+
 .space{
   width: 15%;
   font-family: freedokaR;
   font-size: 30px;
   color: #9F71A6;
   background-image: url("./assets/sparkle00.gif");
+  animation: rainbow 30s linear;
+  animation-iteration-count: infinite;
+  text-shadow: #A8FFD9 1px 0 10px;;
 }
 
 .wings {
@@ -189,8 +231,54 @@ height: 400px;
 }
 
 .sideBarCont {
-  border-radius: solid 4px red;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  border: solid 3px #87cefa80;
+  border-radius: 300px;
+  height: 30vh;
   z-index: 1500;
+  background-color:#FFFFFF80;
+  align-self: flex-end;
+  padding: 30px;
 }
 
+.addJoy {
+  font-family: BILLO;
+  font-size: 50px;
+  color: #87cefa;
+}
+
+.buttonA {
+  display: inherit;
+  font-family: freedokaD;
+  font-size: 40px;
+  color: white;
+  background-color: #87cefa;
+  border-radius: 100px;
+  padding: 2px 6px 2px 6px;
+  margin: 5px;
+}
+
+.buttonA:hover{
+  color: whitesmoke;
+  background-color: lightpink;
+  cursor: pointer;
+}
+
+.heart {
+  position: fixed;
+  top: 50%;
+  right: 30%;
+}
+
+.sparkle {
+  position: fixed;
+  top: 10%;
+  right: 15%;
+  z-index: 1;
+}

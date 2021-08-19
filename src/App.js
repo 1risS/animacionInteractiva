@@ -8,6 +8,8 @@ import wings from "./assets/wings.gif"
 import butterflies from "./assets/but.gif"
 import sparkles1 from "./assets/star.gif"
 import star2 from "./assets/star2.gif"
+import heart from "./assets/heart2.gif"
+import sparkle from "./assets/sparkle04.gif"
 
 
 const videosRoot = `${process.env.PUBLIC_URL}/videos`;
@@ -20,6 +22,8 @@ const backVideos = [2, 4, 6, 8, 10, 12].map((i) => `${videosRoot}/${i}.webm`);
 function App() {
   const [video, setVideo] = useState(0);
   const [showButterflies, setShowButterflies] = useState(false);
+  const[showHeart, setShowHeart] = useState(false);
+  const [showSparkle, setShowSparkle] = useState(false);
   const frontVideoRefs = frontVideos.map(() => createRef());
   const backVideoRefs = backVideos.map(() => createRef());
 
@@ -72,6 +76,28 @@ function App() {
     }, 15000);
   }
 
+  useEffect(() => {
+    console.log("showHeart", showHeart)
+  }, [showHeart]);
+
+  const handleShowHeart = () => {
+    setShowHeart(true);
+    setTimeout(() => {
+      setShowHeart(false);
+    }, 15000);
+  }
+
+  useEffect(() => {
+    console.log("showSparkle", showSparkle)
+  }, [showSparkle]);
+
+  const handleShowSparkle = () => {
+    setShowSparkle(true);
+    setTimeout(() => {
+      setShowHeart(false);
+    }, 15000);
+  }
+
   const frontPlaying = video % 2 === 0;
   const backPlaying = video % 2 === 1;
 
@@ -91,12 +117,6 @@ function App() {
           <div className="space">WTF is this?</div>
         </div>
         <div className="contentCont">
-          <div className="background"></div>
-          <div className="background clouds"></div>
-          <div className="sideBarCont">
-            <div className="buttonA" onClick={handleShowButterflies}> BUT</div>
-          </div>
-          
           {showButterflies && <img className="but butA" id="but" src={butterflies} alt="butterflies" />}
           
           {/* video 1 */}
@@ -145,7 +165,16 @@ function App() {
               </video>
             </div>
           )}
-
+           {showHeart && <img className="heart" id="heart" src={heart} alt="heart" />}
+           {showSparkle && <img className="sparkle" id="sparkle" src={sparkle} alt="sparkle" />}
+          <div className="sideBarCont">
+            <div className="addJoy">Add more joy!</div>
+            <div className="buttonA" onClick={handleShowButterflies}> f </div>
+            <div className="buttonA" onClick={handleShowHeart}> 6 </div>
+            <div className="buttonA" onClick={handleShowSparkle}> T </div>
+          </div>
+          <div className="background"></div>
+          <div className="background clouds"></div>
         </div>
       </div>
     </div>
