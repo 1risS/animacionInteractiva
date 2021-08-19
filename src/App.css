@@ -125,7 +125,7 @@ height: 400px;
 .neko {
   margin-top: 30px;
   margin-left: 80px;
-  opacity: 100%;
+  opacity: 1;
   position: fixed;
   z-index: 2;
   top: 0;
