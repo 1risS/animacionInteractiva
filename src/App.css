@@ -6,6 +6,22 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "freedokaR";
+  src: local("FredokaOne-Regular"),
+      url("./fonts/fredoka/FredokaOne-Regular.otf")
+      format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "freedokaD";
+  src: local("Fredoka_dingbats"),
+      url("./fonts/fredoka/Fredoka_dingbats.otf")
+      format("truetype");
+  font-weight: bold;
+}
+
 .App {
   text-align: center;
 }
@@ -135,6 +151,10 @@ height: 400px;
 
 .space{
   width: 15%;
+  font-family: freedokaR;
+  font-size: 30px;
+  color: #9F71A6;
+  background-image: url("./assets/sparkle00.gif");
 }
 
 .wings {

@@ -1,6 +1,8 @@
 import "./App.css";
 import { createRef, useState, useEffect } from "react";
 import './fonts/BILLO.TTF'
+import './fonts/fredoka/Fredoka_dingbats.otf'
+import './fonts/fredoka/FredokaOne-Regular.otf'
 import neko from "./assets/neko.svg"
 import wings from "./assets/wings.gif"
 import butterflies from "./assets/but.gif"
@@ -86,7 +88,7 @@ function App() {
             <img className="wings" src={wings} alt="wings"></img>
           </div>
           <div className="title">Neko!</div>
-          <div className="space"></div>
+          <div className="space">WTF is this?</div>
         </div>
         <div className="contentCont">
           <div className="background"></div>
