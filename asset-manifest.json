@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/animacionInteractiva/static/css/main.e088db3e.chunk.css",
-    "main.js": "/animacionInteractiva/static/js/main.ee94dc27.chunk.js",
-    "main.js.map": "/animacionInteractiva/static/js/main.ee94dc27.chunk.js.map",
+    "main.css": "/animacionInteractiva/static/css/main.eb741786.chunk.css",
+    "main.js": "/animacionInteractiva/static/js/main.5ee4aaca.chunk.js",
+    "main.js.map": "/animacionInteractiva/static/js/main.5ee4aaca.chunk.js.map",
     "runtime-main.js": "/animacionInteractiva/static/js/runtime-main.4f9b93fb.js",
     "runtime-main.js.map": "/animacionInteractiva/static/js/runtime-main.4f9b93fb.js.map",
     "static/js/2.1a1c39ff.chunk.js": "/animacionInteractiva/static/js/2.1a1c39ff.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e1e67885.chunk.js": "/animacionInteractiva/static/js/3.e1e67885.chunk.js",
     "static/js/3.e1e67885.chunk.js.map": "/animacionInteractiva/static/js/3.e1e67885.chunk.js.map",
     "index.html": "/animacionInteractiva/index.html",
-    "static/css/main.e088db3e.chunk.css.map": "/animacionInteractiva/static/css/main.e088db3e.chunk.css.map",
+    "static/css/main.eb741786.chunk.css.map": "/animacionInteractiva/static/css/main.eb741786.chunk.css.map",
     "static/js/2.1a1c39ff.chunk.js.LICENSE.txt": "/animacionInteractiva/static/js/2.1a1c39ff.chunk.js.LICENSE.txt",
     "static/media/App.css": "/animacionInteractiva/static/media/sparkle00.9a54b2fa.gif",
     "static/media/but.caaff836.gif": "/animacionInteractiva/static/media/but.caaff836.gif",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.4f9b93fb.js",
     "static/js/2.1a1c39ff.chunk.js",
-    "static/css/main.e088db3e.chunk.css",
-    "static/js/main.ee94dc27.chunk.js"
+    "static/css/main.eb741786.chunk.css",
+    "static/js/main.5ee4aaca.chunk.js"
   ]
 }
