@@ -206,6 +206,7 @@ margin-left: 2%;
   animation-iteration-count: infinite;
   text-shadow: #A8FFD9 1px 0 10px;
   padding: 50px;
+  cursor: pointer;
 }
 
 .wings {
@@ -290,6 +291,33 @@ margin-left: 2%;
   top: 10%;
   right: 15%;
   z-index: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 4%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDACAB;
+  }
+
+.txt {
+  font-family: freedokaR;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 2%;
+}
+
+.imgCont {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-evenly;
+  margin: 2%;
 }
 
 .mobile{
