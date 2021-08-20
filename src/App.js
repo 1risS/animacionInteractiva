@@ -106,6 +106,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className="mobile">
+        <div className="mobileTitle">Oh noes!</div>
+        <div className="mobileTxt">Please open this url in a bigger device.</div>
+      </div>
       <div className="container">
         <div className="navbarContainer">
           <div className="logoCont">

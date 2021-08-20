@@ -24,6 +24,7 @@
 
 .App {
   text-align: center;
+  overflow: hidden;
 }
 
 .play {
@@ -289,4 +290,41 @@ margin-left: 2%;
   top: 10%;
   right: 15%;
   z-index: 1;
+}
+
+.mobile{
+  display: none;
+  background-color: black;
+}
+
+.mobileTitle{
+  font-family: BILLO;
+  font-size: 150px;
+  color: white;
+}
+
+.mobileTxt {
+  font-family: freedokaR;
+  font-size: 45px;
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 100%;
+    z-index: 5000;
+    height: 100vh;
+  }
+
+  .container {
+    display: hidden;
+  }
+
 }
