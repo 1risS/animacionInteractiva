@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/animacionInteractiva/static/css/main.0a56af29.chunk.css",
-    "main.js": "/animacionInteractiva/static/js/main.818a7a2f.chunk.js",
-    "main.js.map": "/animacionInteractiva/static/js/main.818a7a2f.chunk.js.map",
+    "main.css": "/animacionInteractiva/static/css/main.2546740b.chunk.css",
+    "main.js": "/animacionInteractiva/static/js/main.35f8341a.chunk.js",
+    "main.js.map": "/animacionInteractiva/static/js/main.35f8341a.chunk.js.map",
     "runtime-main.js": "/animacionInteractiva/static/js/runtime-main.4f9b93fb.js",
     "runtime-main.js.map": "/animacionInteractiva/static/js/runtime-main.4f9b93fb.js.map",
     "static/js/2.1a1c39ff.chunk.js": "/animacionInteractiva/static/js/2.1a1c39ff.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.e1e67885.chunk.js": "/animacionInteractiva/static/js/3.e1e67885.chunk.js",
     "static/js/3.e1e67885.chunk.js.map": "/animacionInteractiva/static/js/3.e1e67885.chunk.js.map",
     "index.html": "/animacionInteractiva/index.html",
-    "static/css/main.0a56af29.chunk.css.map": "/animacionInteractiva/static/css/main.0a56af29.chunk.css.map",
+    "static/css/main.2546740b.chunk.css.map": "/animacionInteractiva/static/css/main.2546740b.chunk.css.map",
     "static/js/2.1a1c39ff.chunk.js.LICENSE.txt": "/animacionInteractiva/static/js/2.1a1c39ff.chunk.js.LICENSE.txt",
     "static/media/App.css": "/animacionInteractiva/static/media/sparkle00.9a54b2fa.gif",
     "static/media/but.caaff836.gif": "/animacionInteractiva/static/media/but.caaff836.gif",
@@ -18,12 +18,14 @@
     "static/media/neko.17711ebd.svg": "/animacionInteractiva/static/media/neko.17711ebd.svg",
     "static/media/sparkle04.ccc32d64.gif": "/animacionInteractiva/static/media/sparkle04.ccc32d64.gif",
     "static/media/star.b68ee2f3.gif": "/animacionInteractiva/static/media/star.b68ee2f3.gif",
+    "static/media/stop0.97bbe8a5.jpg": "/animacionInteractiva/static/media/stop0.97bbe8a5.jpg",
+    "static/media/stop1.390dcc8e.jpg": "/animacionInteractiva/static/media/stop1.390dcc8e.jpg",
     "static/media/wings.44594b3a.gif": "/animacionInteractiva/static/media/wings.44594b3a.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.4f9b93fb.js",
     "static/js/2.1a1c39ff.chunk.js",
-    "static/css/main.0a56af29.chunk.css",
-    "static/js/main.818a7a2f.chunk.js"
+    "static/css/main.2546740b.chunk.css",
+    "static/js/main.35f8341a.chunk.js"
   ]
 }
