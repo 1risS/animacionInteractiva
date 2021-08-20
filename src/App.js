@@ -51,7 +51,6 @@ function App() {
     setVideo((video) => {
       const nextVideo = (video + 1) % videosCount;
       const frontPlaying = nextVideo % 2 === 0;
-      const backPlaying = nextVideo % 2 === 1;
       const index = Math.floor(nextVideo / 2);
       const frontVideo = frontVideos[index];
       const backVideo = backVideos[index];
@@ -110,7 +109,7 @@ function App() {
       <div className="container">
         <div className="navbarContainer">
           <div className="logoCont">
-            <img className="neko" src={neko} alt="neko" height="100px"></img>
+            <img className="neko" src={neko} alt="neko" height="75px"></img>
             <img className="wings" src={wings} alt="wings"></img>
           </div>
           <div className="title">Neko!</div>

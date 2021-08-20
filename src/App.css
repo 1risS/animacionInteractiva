@@ -56,12 +56,13 @@
 align-self: flex-end;
 position: fixed;
 top: 30%;
-left: 50;
+left: 2%;
 z-index: 1;
 }
 
 .star2 {
 height: 400px;
+margin-left: 2%;
 }
 
 .cosa {
@@ -130,23 +131,26 @@ height: 400px;
 }
 
 .logoCont{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border:solid 3px #CA83A2 ;
   border-radius: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 2%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .neko {
-  margin-top: 30px;
-  margin-left: 80px;
+  margin-top: 20px;
+  margin-left: 55px;
   opacity: 1;
   position: fixed;
   z-index: 2;
-  top: 0;
-  left: 0;
-  width: 150px;
+  top: 3%;
+  left: 2%;
+  width: 100px;
 }
 
 @keyframes rainbow{
@@ -194,17 +198,21 @@ height: 400px;
   font-size: 30px;
   color: #9F71A6;
   background-image: url("./assets/sparkle00.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   animation: rainbow 30s linear;
   animation-iteration-count: infinite;
-  text-shadow: #A8FFD9 1px 0 10px;;
+  text-shadow: #A8FFD9 1px 0 10px;
+  padding: 50px;
 }
 
 .wings {
   position: fixed;
   z-index:1;
-  top: 0;
-  left: 0;
-  width: 300px;
+  top: 4%;
+  left: 2%;
+  width: 200px;
 }
 
 .title{
@@ -236,8 +244,8 @@ height: 400px;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 50%;
-  right: 0;
+  top: 60%;
+  right: 2%;
   border: solid 3px #87cefa80;
   border-radius: 300px;
   height: 30vh;
