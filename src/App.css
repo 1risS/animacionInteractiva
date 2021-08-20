@@ -346,7 +346,7 @@ margin-left: 2%;
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 100%;
+    opacity: 1;
     z-index: 5000;
     height: 100vh;
   }
