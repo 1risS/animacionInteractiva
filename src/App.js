@@ -12,6 +12,7 @@ import heart from "./assets/heart2.gif"
 import sparkle from "./assets/sparkle04.gif"
 import stop0 from "./assets/stop0.jpg"
 import stop1 from "./assets/stop1.jpg"
+import close from "./assets/cancel.png"
 
 
 const videosRoot = `${process.env.PUBLIC_URL}/videos`;
@@ -108,6 +109,9 @@ function App() {
     setShowModal(true);
   }
 
+  const handleHideModal = () => {
+    setShowModal(false)
+  }
 
 
   const frontPlaying = video % 2 === 0;
@@ -134,19 +138,28 @@ function App() {
         </div>
         <div className="contentCont">
           {showModal && <div className="modal">
+            <div className="closeButton" onClick={handleHideModal}> 
+              <img src={close} alt="close" height="30px" ></img>
+            </div>
             <div className="txt">
               Este sitio es una exploración de la idea de "animación interactiva". El punto de partida fue la creación de un video en stop motion, con chroma, aprovechando que los browsers modernos <a href="https://developers.google.com/web/updates/2013/07/Alpha-transparency-in-Chrome-video" target="blank">soportan videos con transparencias</a> .
             </div>
             <div className="imgCont">
-              <img src={stop0} alt="chroma0" height="300px"></img>
-              <img src={stop1} alt="chroma1" height="300px"></img>
+              <img className="imgRound" src={stop0} alt="chroma0" height="300px"></img>
+              <img className="imgRound" src={stop1} alt="chroma1" height="300px"></img>
             </div>
             <div className="txt">
               Para acelerar el proceso, la remoción del fondo fue hecha con <a href="https://medium.com/fnplus/blue-or-green-screen-effect-with-open-cv-chroma-keying-94d4a6ab2743" target="blank"> una librería de Python que usa OpenCV</a> pero el resultado no fue el esperado debido a que la técnica de iluminación debió ser mejor para que el algotimo pudiera segmentar la figura sin imperfecciones. 
-              <br></br>
+              <br></br> <br></br>
               El plano frontal general muestra el movimiento de la figura de un gato, dando cuenta de la profundidad del set. 
-              <br></br>
-              Una vez logrado el video, se cargó en la web. Era claro que podíamos profundizar en la idea de adelante-atrás de este gato. Para ello, cortamos el video en varios, de acuerdo a la posición y recorrido del personaje, y desarrollamos un lector secuencial que nos permite incorporar otros elementos visuales entre el "detrás" y el "frente" de la escena, logrando un fundido mayor del elemento visual en video con los componentes propios de la web e imágenes en diferentes formatos.
+              <br></br> <br></br>
+              Una vez logrado el video, se cargó en la web. Era claro que podíamos profundizar en la idea de adelante-atrás de este gato. Para ello, cortamos el video en varios, 
+              de acuerdo a la posición y recorrido del personaje, y desarrollamos un lector secuencial que nos permite incorporar otros elementos visuales entre el "detrás" y el "frente" de la escena, 
+              logrando un fundido mayor del elemento visual en video con los componentes propios de la web e imágenes en diferentes formatos.
+              <br></br> <br></br>
+              En lugar de presentar todos los elementos visuales, decidimos aprovechar la capacidad de interacción que ofrece la web, dándole a le espectadore/usuarie el control de aparición de dichos elementos.
+              <br></br> <br></br>
+              A futuro, además de perfeccionar la técnica de stop motion con chroma, me gustaría presentar dos botones que cambien el theme, siendo este "love" y pudiendo cambiarlo a "hate" (cambiarían los colores de la interfaz y los elementos gráficos para acompañar el mood propuesto).
             </div>
             </div>
           }

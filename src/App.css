@@ -22,6 +22,21 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "loving";
+  src: local("loving"),
+      url("./fonts/loving/Loving.otf")
+      format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "loving";
+  src: local("loving"),
+      url("./fonts/loving/Loving.ttf")
+      format("truetype");
+  font-weight: normal;
+}
+
 .App {
   text-align: center;
   overflow: hidden;
@@ -144,10 +159,10 @@ margin-left: 2%;
   margin-bottom: 2%;
 }
 .neko {
-  margin-top: 20px;
-  margin-left: 55px;
+  margin-top: 4%;
+  margin-left: 4%;
   opacity: 1;
-  position: fixed;
+  position: absolute;
   z-index: 2;
   top: 3%;
   left: 2%;
@@ -210,7 +225,7 @@ margin-left: 2%;
 }
 
 .wings {
-  position: fixed;
+  position: absolute;
   z-index:1;
   top: 4%;
   left: 2%;
@@ -246,7 +261,7 @@ margin-left: 2%;
   justify-content: center;
   align-items: center;
   position: fixed;
-  top: 60%;
+  top: 58%;
   right: 2%;
   border: solid 3px #87cefa80;
   border-radius: 300px;
@@ -294,22 +309,36 @@ margin-left: 2%;
 }
 
 .modal {
-  position: fixed;
+  position: relative;
   top: 30%;
-  left: 4%;
+  left: 10%; 
   width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #EDACAB;
+  border-radius: 60px;
+  overflow: scroll;
+  z-index: 5000;
+  margin-top:4%;
+  margin-bottom: 10%;
   }
 
+.closeButton {
+  height: 50px;
+  margin: 4% 5% 0% 0%;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
 .txt {
-  font-family: freedokaR;
+  font-family: loving;
   font-size: 20px;
   font-weight: 200;
-  margin: 2%;
+  margin: 0% 4% 4% 4%;
+  color: #332F2E;
+  text-align: left;
 }
 
 .imgCont {
@@ -318,6 +347,11 @@ margin-left: 2%;
   width: 100vw;
   justify-content: space-evenly;
   margin: 2%;
+}
+
+.imgRound {
+  border-radius: 60px;
+  margin-bottom: 2%;
 }
 
 .mobile{
@@ -346,7 +380,6 @@ margin-left: 2%;
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 1;
     z-index: 5000;
     height: 100vh;
   }
